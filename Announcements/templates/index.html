@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <link href="{% static "css/style.css" %}" rel="stylesheet">
+    <script src="{% static "js/script.js" %}"></script>
+    <title>Announcement Page</title>
+</head>
+<body onload="activePeriod({{ period }})">
+<h1 class="header">Announcement Border</h1>
+<form action="." method="post" class="create_section" enctype="multipart/form-data"> {% csrf_token %}
+    <label>Announcement Text: </label>
+    <input type="text" class="text_box" name="announcement_text" placeholder="Add an announcement" required>
+    <input type="submit" class="btn" value="Create">
+</form>
+</form>
+
+<form action="." method="get" name="period_form" class="period_section" enctype="multipart/form-data">
+    <input type="submit" id="all" class="btn small" name="period" value="All">
+    <input type="submit" id="today" class="btn small" name="period" value="Today">
+    <input type="submit" id="week" class="btn small" name="period" value="Last 7 Days">
+    <input type="submit" id="month" class="btn small" name="period" value="Last 30 Days">
+</form>
+<div class="announcement_section">
+    {% for anc in announcements %}
+        <div class="card">
+            <p class="card_text">{{ anc.text }}</p>
+            <form action="." method="post" class="delete_section" enctype="multipart/form-data"
+                  onsubmit="return confirm('Do you really want to delete this announcement?');"> {% csrf_token %}
+                <input type="hidden" name="announcement_id" value="{{ anc.id }}">
+                <input type="submit" class="btn delete" name="Delete" value="Delete">
+                <p class="card_date">{{ anc.date }}</p>
+            </form>
+        </div>
+    {% empty %}
+        <p class="empty_form">There are no announcements to show!</p>
+    {% endfor %}
+</div>
+</body>
+</html>
