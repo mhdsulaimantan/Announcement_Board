@@ -20,9 +20,10 @@
 * ***note: Before you start the installation process for the project, you need to have python already installed on your operating system.***
 * Download and Extract the project **zip file** in your desired directory.
 * Run **Command Prompet** and Navigate to the file's location: `cd <file_Path>`
-* To install required libraries to run the project: `pip install -r requirements.txt`. 
-* To run the project(website), Simply type: `py manage.py runserver`
-* you will see that the local server had started, by **Clicking on** the URL, a browser will open and run the website.  
+* Install required libraries to run the project: `pip install -r requirements.txt`. 
+* Start the local server to run the website: `py manage.py runserver`
+* You will see that the local server had started, copy the **URL** and paste it into your browser.
+* ***note: There are already built-in announcements to test the website***   
 
 ### Way to improve:
 * Better Front-end Design.
