@@ -15,18 +15,18 @@ Announcement Board website allows users to publish text announcements. It contai
 6. If the user wants to delete an announcement, he/she can press the **Delete** button, a confirmation message will popup, press **ok** and the announcement will be deleted. 
 
 ### Run and installation:
-* ***note: Before you start the installation process for the project, you need to have python already installed on your operating system.***
-* Download and Extract the project **zip file** in your desired directory.
-* Run **Command Prompet** and Navigate to the file's location: `cd <file_Path>`
-* Install required libraries to run the project: `pip install -r requirements.txt`. 
-* Start the local server to run the website: `py manage.py runserver`
-* You will see that the local server had started, copy the **URL** and paste it into your browser.
-* ***note: There are already built-in announcements to test the website***   
+***Note: Before you start the installation process of the project, you need to have python>=3.7 already installed on your operating system.***
+1. Download and extract the project **zip file** in your desired directory.
+2. From your terminal, navigate to the file's location: `cd <file_Path>`
+3. Install required libraries to run the project: `pip install -r requirements.txt`. 
+4. Start the local server to run the website: `py manage.py runserver`
+5. After the server starts, copy the **URL** and paste it into your browser.
+***Note: For testing, there are already built-in announcements.***   
 
-### Way to improve:
-* Better Front-end Design.
-* Add Edit functionality to modify an announcement.
-* authentication/authorization for each user.
-* Profile page for the user where he/she can find its own announcements with the ability to make changes on them or create new ones.
-* The user could add different types of files to the announcement (image - videos..etc).
-* Reply Functionality: The user can reply to an announcement.
+### Improvment points:
+* Better Front-end design.
+* Add "edit" feature to modify an announcement.
+* Authentication/Authorization.
+* Profile page for users where they can find their own announcements with the ability to modify them or create new ones.
+* Users could add different types of files to the announcement (image - videos..etc).
+* Reply feature: The user can reply to an announcement.
