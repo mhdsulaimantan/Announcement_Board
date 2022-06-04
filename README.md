@@ -3,7 +3,7 @@
 ### Project Description:
 * This project is for the **Junior Agile Developer** assignment. 
 * it contains a one-page website where users can create, read and delete an announcement on the same page. 
-* it has a simple UI design with a headline, create period and announcement sections.
+* it has a simple UI design with a headline, create, periods and announcements sections.
 
 ### How it works:
 1. In the create announcement section, the user can write a text for the announcement that he/she would like to make and then press the **Create** button to create a new announcement.
