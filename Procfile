@@ -1,1 +1,1 @@
-web: gunicorn SmallStoreWebsite.wsgi
+web: gunicorn Announcement_Board.wsgi
