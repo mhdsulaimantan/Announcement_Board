@@ -31,7 +31,6 @@ label {
     border: 2px solid deepskyblue;
     border-radius: 3px;
     background-color: white;
-    color: deepskyblue;
 }
 
 .text_box {
@@ -42,6 +41,7 @@ label {
 .btn {
     font-size: 17px;
     font-weight: bold;
+    color: deepskyblue;
 }
 
 .small {
